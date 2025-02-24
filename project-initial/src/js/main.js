@@ -2,7 +2,9 @@
 
    let context;  
    let canvas;
-   let grid;  
+   const PATH = '../../assets/img/';
+   var sideImageDisplay = new Image();
+   sideImageDisplay.src = 'assets/img/barracanvasgreen.png';
 
     window.onload = init();
    
@@ -18,25 +20,24 @@
 
     function start() {
       grid = new Grid(1900,800,"white");
-      grid.render();
-      sideImageBrand.render(canvas,sideImage);
+      sideImageBrand = new CanvasImage(sideImageDisplay.width,sideImageDisplay.height,0,0);
       loop();
     };
 
-    //CANVAS UPDATE
+
     function update() {
         draw();
     }
 
-    //CANVAS DRAW
     function draw() {
 
         //CLEAR CANVAS DISPLAY
         canvas.fillStyle = 'black';
         canvas.clearRect(0,0,1920,1080);
         
+        //DRAW
         grid.render();
-        sideImageBrand.render(canvas,sideImage);
+        sideImageBrand.render(canvas,sideImageDisplay);
     }
 
     //RECURSIVE / LOOP 
