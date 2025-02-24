@@ -20,7 +20,8 @@
 
     function start() {
       grid = new Grid(1900,800,"white");
-      sideImageBrand = new CanvasImage(sideImageDisplay.width,sideImageDisplay.height,0,0);
+      sideImageBrand = new CanvasImage(150,800,0,0);
+      title = new CanvasText(250,400,'Arial','80px','Bold','yellow');
       loop();
     };
 
@@ -38,6 +39,7 @@
         //DRAW
         grid.render();
         sideImageBrand.render(canvas,sideImageDisplay);
+        title.render(canvas,"WELCOME CANVAS HTML 5");
     }
 
     //RECURSIVE / LOOP 

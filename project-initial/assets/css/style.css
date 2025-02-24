@@ -17,9 +17,11 @@ body {
 
 main {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   width: 100%;
   height: inherit;
-  background-image: var(--image-bck-containers);
 }
 
 #canvas-display{
@@ -39,6 +41,9 @@ main {
 
     
   main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
   }
