@@ -22,7 +22,7 @@ main {
   background-image: var(--image-bck-containers);
 }
 
-#mcanvas{
+#canvas-display{
   width: 100%;
   height: auto;
   border: 1px solid;
@@ -43,7 +43,7 @@ main {
     height: auto;
   }
 
-  #mcanvas{
+  #canvas-display{
     width: 100%;
     height: inherit;
   }  

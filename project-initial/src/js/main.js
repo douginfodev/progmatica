@@ -7,7 +7,7 @@
     window.onload = init();
    
     function init() {
-        context = document.getElementById('mcanvas');
+        context = document.getElementById('canvas-display');
 
         if (context !== null) {
             canvas = context.getContext('2d');

@@ -2,13 +2,14 @@ var context;
 var canvas;
 
 //Attached Canvas Display
-context = document.getElementById('mcanvas');
+context = document.getElementById('canvas-display');
 canvas  = context.getContext('2d');
 
 const GRIDSPACINGX  = 80;
 const GRIDSPACINGY  = GRIDSPACINGX;
-const GRIDLINEWIDTH = 1.5;
+const GRIDLINEWIDTH = 2.0;
 
+//Construct Function
 const Grid = function (width,height,color) {
   this.x = 0,
   this.y = 0,
